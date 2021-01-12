@@ -20,3 +20,4 @@ def is_sorted(arr):
     return True
 
 assert(is_sorted(sorted_arr) == True)
+
