@@ -1,4 +1,7 @@
 # needs to be non mutating to return index
+# assume n and arr will contain same/similar types: strings + list of strings or int/float + list of ints/floats
+
+
 def binary_search(n, arr, start = 0, end = 0):
     if end == 0: end = len(arr)
     # not found if we have an empty list
@@ -19,7 +22,8 @@ def binary_search(n, arr, start = 0, end = 0):
     elif arr[mid] == n: return mid
 
 print(binary_search(5, [1,3,4,5]))
-print(binary_search(3, [1,3,4,5,6,18,25,97,140,261]))
+print(binary_search(85, [1,3,4,5,6,18,25,97,140,261]))
+print(binary_search('a', ['a', 'b', 'c']))
 
 # def binary_search(n, arr):
 #     if len(arr) == 0: return -1
